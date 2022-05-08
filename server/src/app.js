@@ -34,7 +34,14 @@ mongoose
 
 // ---------- Routes ----------- //
 const user = require("./routes/user");
+const role = require("./routes/role");
+const estate = require("./routes/estate");
+const auth = require("./routes/auth");
+
 app.use("/api/user", user);
+app.use("/api/role", role);
+app.use("/api/estate", estate);
+app.use("/api/auth", auth);
 
 // ---------- 404 and forward Error ----------//
 
